@@ -38,11 +38,4 @@ class ExampleApp extends Application{
 
 export const exampleApp = new ExampleApp();
 
-const start = setInterval(() => {    
-    const container = window.w.get("layout-container");
-    console.log(container)
-    if (container) {
-        clearInterval(start);
-        exampleApp.init();
-    }
-}, 500);
+exampleApp.init();

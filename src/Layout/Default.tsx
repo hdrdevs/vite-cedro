@@ -26,12 +26,9 @@ export default WUI.createWidget(
     </div>
 );
 
-console.log(window.w);
-
 window.w.get("btn-theme")?.subscribe({
     event: "click",
     then: () => {
-        console.log("test")
         exampleApp.theme.toggleTheme();
         if (exampleApp.theme.current?.name === "dark") {
             (window.w.get("btn-theme") as IconButton).setIcon("light_mode");
