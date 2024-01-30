@@ -26,14 +26,14 @@ export default WUI.createWidget(
     </div>
 );
 
-window.w.get("btn-theme")?.subscribe({
+w.get("btn-theme")?.subscribe({
     event: "click",
     then: () => {
         exampleApp.theme.toggleTheme();
         if (exampleApp.theme.current?.name === "dark") {
-            (window.w.get("btn-theme") as IconButton).setIcon("light_mode");
+            (w.get("btn-theme") as IconButton).setIcon("light_mode");
         } else {
-            (window.w.get("btn-theme") as IconButton).setIcon("dark_mode");
+            (w.get("btn-theme") as IconButton).setIcon("dark_mode");
         }
     },
 });
