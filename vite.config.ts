@@ -8,7 +8,7 @@ export default defineConfig({
         jsxFactory: "DOMcreateElement",
         jsxFragment: "DOMcreateFragment",
         jsxInject:
-            "import { DOMcreateElement, DOMcreateFragment } from 'webware/src/core/jsxsupport';",
+            "import { DOMcreateElement, DOMcreateFragment } from 'cedro/src/core/jsxsupport';",
     },
 
 });

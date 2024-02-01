@@ -1,8 +1,8 @@
 import "./styles/default.css";
-import * as WUI from "webware/src/ui/widget.builder.ui";
-import { WidgetTypes } from "webware/src/ui/widget.ui";
+import * as WUI from "cedro/src/ui/widget.builder.ui";
+import { WidgetTypes } from "cedro/src/ui/widget.ui";
 import { exampleApp } from "../main";
-import { IconButton} from "webware/src/ui/";
+import { IconButton} from "cedro/src/ui/";
 
 const icon_theme =
     exampleApp.theme.current?.name == "dark" ? "light_mode" : "dark_mode";
@@ -21,7 +21,7 @@ export default WUI.createWidget(
                 </div>
             </div>
         <div id="layout-container" widget-class="site-content">
-            &nbsp;hola webware
+            &nbsp;hola cedro
         </div>
     </div>
 );

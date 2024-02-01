@@ -1,6 +1,6 @@
-import {Application, WidgetAlignTypes} from "webware/src/"
-import { IMetaDataElement } from "webware/src/core/seo";
-import { IWidget } from "webware/src/interfaces/widget.interface.ts";
+import {Application, WidgetAlignTypes} from "cedro/src/"
+import { IMetaDataElement } from "cedro/src/core/seo";
+import { IWidget } from "cedro/src/interfaces/widget.interface.ts";
 
 class ExampleApp extends Application{
 
@@ -31,7 +31,7 @@ class ExampleApp extends Application{
             content: "description here",
         } as IMetaDataElement);
 
-        this.seo.setTitle("webware2 - Vite Application Template");
+        this.seo.setTitle("cedro2 - Vite Application Template");
 
     }
 }
