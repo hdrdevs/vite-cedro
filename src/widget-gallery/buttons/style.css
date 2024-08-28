@@ -1,0 +1,26 @@
+.ButtonsContainer {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100% !important;
+    overflow: auto !important;
+    margin-left: 20px;
+}
+
+.ButtonsContainer button {
+    position: relative !important;
+    display: block !important;
+    width: 250px !important;
+    height: 50px !important;
+    margin: 5px !important;
+}
+
+.ItemTitle h3 {
+    position: relative !important;
+    margin-top: 15px !important;
+    margin-bottom: 5px !important;
+}
+
+.ItemTitle {
+    height: 45px !important;
+}
