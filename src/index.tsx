@@ -120,7 +120,6 @@ window.app = (() => {
                 </WContainer>
             </Widgets>
             <Routes hostId="main-container">
-                <Route src="/" />
                 <Route src="/counter/" />
                 <Route src="/widget-gallery/" />
                 <Route src="/widget-gallery/buttons/" />
