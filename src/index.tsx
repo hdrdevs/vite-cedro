@@ -64,6 +64,7 @@ window.app = (() => {
         } else if (router.getCurrentLocation().url.indexOf("/counter") > -1) {
             stack.setActive("btn-home");
         } else {
+            //Default route.
             stack.setActive("btn-home");
             app?.goTo("/counter");
         }
