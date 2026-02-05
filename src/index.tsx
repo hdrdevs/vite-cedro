@@ -16,12 +16,7 @@ const ThemeMenu = () => {
     };
 
     return (
-        <WIconButtonMenu
-            id="btn-theme"
-            icon="palette"
-            fixedSize={50}
-            onOptionClicked={handleThemeChanged}
-        >
+        <WIconButtonMenu id="btn-theme" icon="palette" fixedSize={50} onOptionClicked={handleThemeChanged}>
             <WIconButtonMenuItem id="btn-theme-light" icon="light_mode" label="Light" />
             <WIconButtonMenuItem id="btn-theme-dark" icon="dark_mode" label="Dark" />
             <WIconButtonMenuItem id="btn-theme-cedro" icon="light_mode" label="Cedro" />
@@ -83,12 +78,7 @@ window.app = (() => {
         >
             <Widgets>
                 <WContainer orientation="vertical">
-                    <WContainer
-                        orientation="horizontal"
-                        fixedSize={50}
-                        padding={4}
-                        classNames="headerBar"
-                    >
+                    <WContainer orientation="horizontal" fixedSize={50} padding={4} classNames="headerBar">
                         <WImage id="top-logo" src="/cedro-logo.png" fixedSize={120} />
                         <WSpacer />
                         <WButtonStack
@@ -136,6 +126,6 @@ window.app = (() => {
                 <Route src="/widget-gallery/toolbars/" />
                 <Route src="/widget-gallery/datagrids/" />
             </Routes>
-        </Application>
+        </Application>,
     );
 })();
